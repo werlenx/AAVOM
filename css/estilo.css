@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+}
+.div2 {
+  width: 100%;
+  margin:auto;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color:rgb(248, 223, 223); ;
+  font-family: elvetica,sans-serif;
+  margin: auto ;
+  padding: auto;
+  width: 70%;
+}
+header{
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #02a316;
+  padding: 0px 40px 0px 40px;
+  height: 250px;
+  width: 100%;
+}
+
+/* carrousel*/
+div #items-wraper{
+  margin: 0 padding 0; box-sizing: border-box;
+  width: 100vw;
+}
+#items {
+ display: flex;
+ overflow-x: auto;
+ scroll-snap-type: x mandatory;
+ -webkit-overflow-scrolling: touch;
+ scroll-behavior: smooth;
+}
+.item{
+  flex: none;
+  width: 100%;
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+div .item img {
+  height: 400px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* carrousel*/
+
+header h1 a{
+  color: rgb(255, 164, 83);
+}
+header a{
+  text-decoration: none;
+}
+.redesocial ul{
+  list-style-type: none;
+}
+.redesocial a {
+  color: rgb(255, 164, 83);
+}
+/*aqui termina o header*/
+
+section{
+  flex-direction: column;
+}
+section div {
+  width: 80%;
+  background-color: rgb(209, 242, 213);
+  margin: 10px auto;
+  padding: 10px;
+}
+section .div2{
+  display: block;
+  width: 100%;
+}
+
+section .sobre{
+  width: 100%;
+}
+section p{
+  padding: auto;
+  margin: 0;
+  margin-bottom:1em;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+img{
+  width: 100%;
+}
+/*aqui termina section*/
+.titulo{
+  background-color: rgb(3, 117, 128);
+  text-align: center;
+}
+.galeria{
+  background-color: rgb(53, 150, 159);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: stretch;
+
+}
+.galeria img{
+  margin: 2px;
+  opacity: 0.8;
+  cursor: pointer;
+  width: 30%;
+  flex-grow: 1;
+}
+.galeria img:hover{
+  opacity: 1;
+}
+/*aqui termina galeria*/
+section .parceiros h2{
+  background-color: rgb(171, 7, 185);
+}
+section .parceiros{
+  width: 100%;
+  margin: 0; 
+  padding: 50px 0 50px 0;
+  background-color: #35969f;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+section .parceiros img{
+  width: 70px;
+  padding: 0;
+  margin: 0;
+}
+/*aqui termina parceiros*/
+section .coordenacao :first-child{
+  font-size: 25px;
+}
+section .coordenacao{
+  width: 100%;
+  padding: 50px 0 50px 0;
+  margin: 0
+}
+section .coordenacao p{
+  text-align: center;
+  padding: auto;
+}
+
+
+footer{
+  color: #fff;
+  align-items: center;
+  display: block;
+  background-color: rgb(255, 121, 67);
+  padding: 20px;
+}
+footer p{
+  text-align: center;
+  margin: 0;
+}
